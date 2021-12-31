@@ -15,8 +15,6 @@ copyright:      2021 Jeff Gonzalez
 license:        BSD3
 build-type:     Simple
 extra-source-files:
-    ChangeLog.md
-    LICENSE
     README.md
     stack.yaml
     package.yaml
