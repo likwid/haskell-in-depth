@@ -1,0 +1,65 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.34.4.
+--
+-- see: https://github.com/sol/hpack
+
+name:           haskell-in-depth
+version:        0.1.0.0
+description:    Please see the README on GitHub at <https://github.com/likwid/haskell-in-depth#readme>
+homepage:       https://github.com/likwid/haskell-in-depth#readme
+bug-reports:    https://github.com/likwid/haskell-in-depth/issues
+author:         Jeff Gonzalez
+maintainer:     likwid at gmail
+copyright:      2021 Jeff Gonzalez
+license:        BSD3
+build-type:     Simple
+extra-source-files:
+    ChangeLog.md
+    LICENSE
+    README.md
+    stack.yaml
+    package.yaml
+data-files:
+    data/dirs.txt
+    data/ipdb.txt
+    data/ipranges.txt
+    data/owid-covid-data.csv.gz
+    data/quotes.csv
+    data/ssrequests.txt
+    data/suntimes.config.sample.json
+    data/turns.txt
+    data/texts/Dracula.srt
+    data/texts/forsyte.txt
+    data/texts/hamlet.txt
+    data/texts/phrase.txt
+    data/texts/rune-poem.txt
+
+source-repository head
+  type: git
+  location: https://github.com/likwid/haskell-in-depth
+
+library
+  exposed-modules:
+      Empty
+  hs-source-dirs:
+      empty
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable hello
+  main-is: intro/hello.hs
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans
+  build-depends:
+      base >=4.7 && <5
+  default-language: Haskell2010
+
+executable vocab1
+  main-is: ch1/vocab1.hs
+  ghc-options: -Wall -Werror -Wcompat -Widentities -Wincomplete-uni-patterns -Wincomplete-record-updates -Wno-unused-top-binds -Wno-orphans
+  build-depends:
+      base >=4.7 && <5
+    , text ==1.2.*
+  default-language: Haskell2010
