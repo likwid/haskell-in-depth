@@ -28,6 +28,10 @@ executables:
     main: ch1/vocab1.hs
     other-modules: []
     dependencies: text >=1.2 && <1.3
+  vocab2:
+    main: ch1/vocab2.hs
+    other-modules: []
+    dependencies: text >=1.2 && <1.3
 
 ghc-options:
 - -Wall
